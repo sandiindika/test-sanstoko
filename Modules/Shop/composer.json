@@ -17,14 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Shop\\": "app/",
-            "Modules\\Shop\\Database\\Factories\\": "database/factories/",
-            "Modules\\Shop\\Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Modules\\Shop\\Tests\\": "tests/"
+            "Modules\\Shop\\": ""
         }
     }
 }

@@ -9,7 +9,6 @@ trait UuidTrait
     protected static function boot()
     {
         parent::boot();
-
         static::creating(function ($model) {
             $model->incrementing = false;
             $model->keyType = 'string';
@@ -21,7 +20,7 @@ trait UuidTrait
     {
         return false;
     }
-
+    
     public function getKeyType()
     {
         return 'string';
