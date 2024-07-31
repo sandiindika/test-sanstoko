@@ -88,7 +88,7 @@ Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request atau bu
 
 ### Keamanan
 
-Jika Anda menemukan kerentanan keamanan dalam proyek ini, harap laporkan melalui email ke [email@example.com]. Semua kerentanan keamanan akan ditangani segera.
+Jika Anda menemukan kerentanan keamanan dalam proyek ini, harap laporkan melalui email ke [sandidika@gmail.com]. Semua kerentanan keamanan akan ditangani segera.
 
 ### Lisensi
 
