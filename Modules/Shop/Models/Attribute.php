@@ -36,7 +36,7 @@ class Attribute extends Model
 
     protected static function newFactory()
     {
-        return \Modules\Shop\Database\Factories\AttributeFactory::new();
+        return AttributeFactory::new();
     }
 
     public function options()

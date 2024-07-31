@@ -4,23 +4,27 @@ namespace Modules\Shop\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Shop\Database\Factories\AttributeOptionFactory;
+use Modules\Shop\Database\Factories\TagFactory;
 use App\Traits\UuidTrait;
 
-class AttributeOption extends Model
+class Tag extends Model
 {
     use HasFactory, UuidTrait;
 
-    protected $table = 'shop_attribute_options';
+    protected $table = 'shop_tags';
 
     protected $fillable = [
-        'attribute_id',
         'slug',
         'name',
     ];
 
     protected static function newFactory()
     {
-        return AttributeOptionFactory::new();
+        return TagFactory::new();
+    }
+
+    public function products()
+    {
+        return $this->belongsToMany('Modules\Shop\Models\Product', 'shop_products_tags', 'tag_id', 'product_id');
     }
 }
