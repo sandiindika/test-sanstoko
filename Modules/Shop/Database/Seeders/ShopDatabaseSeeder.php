@@ -2,6 +2,7 @@
 
 namespace Modules\Shop\Database\Seeders;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
 class ShopDatabaseSeeder extends Seeder
@@ -11,6 +12,8 @@ class ShopDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        Model::unguard();
         // $this->call([]);
+        $this->call(ProductTablesSeeder::class);
     }
 }
